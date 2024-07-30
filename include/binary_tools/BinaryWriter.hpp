@@ -4,7 +4,7 @@
 #include <fstream>
 #include <string>
 
-#include <binary_tools/MemoryBuffer.h>
+#include <binary_tools/MemoryBuffer.hpp>
 
 namespace binary_tools
 {

@@ -3,7 +3,7 @@
 #include <string>
 #include <fstream>
 
-#include "Span.h"
+#include <binary_tools/Span.hpp>
 
 namespace binary_tools
 {
