@@ -3,6 +3,7 @@
 
 #include "binary_tools/BinaryWriter.h"
 #include "binary_tools/MemoryBuffer.h"
+#include "BinaryWriter.h"
 
 namespace binary_tools
 {
@@ -82,6 +83,21 @@ namespace binary_tools
     void BinaryWriter::WriteInt64(int64_t value)
     {
         stream_->write(reinterpret_cast<const char *>(&value), 8);
+    }
+
+    void BinaryWriter::WriteBoolean(bool value)
+    {
+        stream_->write(reinterpret_cast<const char *>(&value), 1);
+    }
+
+    void BinaryWriter::WriteByte(uint8_t value)
+    {
+        stream_->write(reinterpret_cast<const char *>(&value), 1);
+    }
+
+    void BinaryWriter::WriteBytes(const uint8_t *data, size_t size)
+    {
+        stream_->write(reinterpret_cast<const char *>(data), size);
     }
 
     void BinaryWriter::WriteChar(char value)

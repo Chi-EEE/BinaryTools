@@ -32,6 +32,9 @@ namespace binary_tools
         [[nodiscard]] int32_t ReadInt32();
         [[nodiscard]] int64_t ReadInt64();
 
+        [[nodiscard]] bool ReadBoolean();
+        [[nodiscard]] uint8_t ReadByte();
+        [[nodiscard]] std::vector<uint8_t> ReadBytes(size_t count);
         [[nodiscard]] char ReadChar();
         [[nodiscard]] wchar_t ReadCharWide();
         [[nodiscard]] std::string ReadNullTerminatedString();

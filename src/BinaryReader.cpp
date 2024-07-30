@@ -1,5 +1,6 @@
 #include "binary_tools/BinaryReader.h"
 #include "binary_tools/MemoryBuffer.h"
+#include "BinaryReader.h"
 
 namespace binary_tools
 {
@@ -81,6 +82,23 @@ namespace binary_tools
     {
         int64_t output;
         stream_->read(reinterpret_cast<char *>(&output), 8);
+        return output;
+    }
+
+    bool BinaryReader::ReadBoolean()
+    {
+        return this->ReadUint8() != 0;
+    }
+
+    uint8_t BinaryReader::ReadByte()
+    {
+        return this->ReadUint8();
+    }
+
+    std::vector<uint8_t> BinaryReader::ReadBytes(size_t count)
+    {
+        std::vector<uint8_t> output(count);
+        stream_->read(reinterpret_cast<char *>(&output), count);
         return output;
     }
 

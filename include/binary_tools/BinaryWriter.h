@@ -30,6 +30,9 @@ namespace binary_tools
         void WriteInt32(int32_t value);
         void WriteInt64(int64_t value);
 
+        void WriteBoolean(bool value);
+        void WriteByte(uint8_t value);
+        void WriteBytes(const uint8_t *data, size_t size);
         void WriteChar(char value);
         // Write string to output with null terminator
         void WriteNullTerminatedString(const std::string &value);
