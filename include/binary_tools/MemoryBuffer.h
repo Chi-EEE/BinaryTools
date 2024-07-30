@@ -2,6 +2,7 @@
 // Somehow the windows min and max macros are being leaked into here regardless of where I define NOMINMAX. This works as a fix for the moment
 #undef min
 #undef max
+
 #include <streambuf>
 #include <algorithm>
 #include <numeric>
