@@ -3,7 +3,6 @@
 
 #include "binary_tools/BinaryWriter.h"
 #include "binary_tools/MemoryBuffer.h"
-#include "BinaryWriter.h"
 
 namespace binary_tools
 {

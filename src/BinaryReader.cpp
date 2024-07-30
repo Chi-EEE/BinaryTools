@@ -1,6 +1,5 @@
 #include "binary_tools/BinaryReader.h"
 #include "binary_tools/MemoryBuffer.h"
-#include "BinaryReader.h"
 
 namespace binary_tools
 {
