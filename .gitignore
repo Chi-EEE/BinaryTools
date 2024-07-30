@@ -274,3 +274,6 @@ Appveyor/
 TODO
 
 BinaryTools/TestBin2.bin
+
+.xmake/
+build/
