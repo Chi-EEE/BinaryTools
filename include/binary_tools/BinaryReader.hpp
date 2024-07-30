@@ -8,8 +8,6 @@
 
 namespace binary_tools
 {
-    struct MemoryBuffer;
-
     // Class that can read binary data either from a file or from a fixed size buffer
     // depending on the constructor used.
     class BinaryReader
